@@ -1,4 +1,4 @@
-const converter = require('../converter')
+const converter = require('../src/converter')
 
 var assert = require('assert');
 describe('Converter', function() {
@@ -6,7 +6,7 @@ describe('Converter', function() {
     assert.equal(converter(1), 1.3066);
   });
 
-  it('should return 1306.6 when 1000 provided', function() {
-    assert.equal(converter(1000), 1306.6);
+  it('should return take a £25 fee when 1000 provided', function() {
+    assert.equal(converter(1001), 1275.2416);
   });
 });
