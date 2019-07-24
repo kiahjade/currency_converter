@@ -3,11 +3,11 @@ const sourceFee = 0.01
 const fixFee = 25 * rate
 
 module.exports = (amount) => {
-  if (amount < 0) {
-    return 0
-  } else if (amount <= 1000) {
-    return (amount * rate) - ((amount * sourceFee) * rate);
-  } else if (amount > 1000){
+  if (amount < 25) {
+    return "Minimum exchange is £25"
+  } else if (amount < 1000) {
     return (amount * rate) - (fixFee);
+  } else if (amount >= 1000){
+    return (amount * rate) - ((amount * sourceFee) * rate);
   }
 }
