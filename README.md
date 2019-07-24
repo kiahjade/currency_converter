@@ -1,5 +1,5 @@
-### Currency Converter
-# Tech Test
+# Currency Converter
+## Tech Test
 
 ## Problem Statement
 
