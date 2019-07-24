@@ -1,10 +1,11 @@
 const rate = 1.3066
+const sourceFee = 0.01
 const fixFee = 25 * rate
 
 module.exports = (amount) => {
   if (amount <= 1000) {
-    return amount * rate;
+    return (amount * rate) - ((amount * sourceFee) * rate);
   } else if (amount > 1000){
-    return (amount * rate) - (25 * rate);
+    return (amount * rate) - (fixFee);
   }
 }
