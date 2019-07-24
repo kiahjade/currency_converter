@@ -1,13 +1,13 @@
-# Currency Converter
-### Tech Test
+### Currency Converter
+# Tech Test
 
-### Problem Statement
+## Problem Statement
 
 Create a FX API service for a bank which calculates the currency conversion say GBP-USD (using pre-defined exchange rates – embedded in your service for now), for a given amount and returns the target amount.
 
 GBP-USD Rate = 1.3066USD
 
-### Requirements/Specifications
+## Requirements/Specifications
 
 You will be examined on below
 
